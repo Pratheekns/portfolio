@@ -210,11 +210,11 @@ img {
 .home__img {
   position: absolute;
   right: -5%;
-  bottom:-180px;
+  bottom:-150px;
   width: 260px;
 }
 .home__blob {
-    transform: translateY(200px); /* Move it further down */
+    transform: translateY(100px); /* Move it further down */
 }
 .home__blob {
   fill: var(--first-color);
