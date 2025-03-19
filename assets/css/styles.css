@@ -209,9 +209,12 @@ img {
 }
 .home__img {
   position: absolute;
-  right: 0;
-  bottom:-60px;
+  right: 10%;
+  bottom:-80px;
   width: 260px;
+}
+.home__blob {
+    transform: translateY(100px); /* Move it further down */
 }
 .home__blob {
   fill: var(--first-color);
