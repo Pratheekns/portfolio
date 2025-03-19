@@ -210,7 +210,7 @@ img {
 .home__img {
   position: absolute;
   right: 0;
-  bottom:-60px;
+  bottom:-100px;
   width: 260px;
 }
 .home__blob {
