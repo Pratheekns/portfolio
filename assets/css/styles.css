@@ -491,18 +491,37 @@ img {
     width: 450px;
   }
 }
+.about__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    text-align: left;
+}
+
+.about__data {
+    max-width: 500px;
+}
+
+.about__info {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
 .button {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #4db5ff; /* Light blue */
-    color: white; /* Text color */
+    color: white;
     padding: 12px 24px;
     font-size: 1rem;
     font-weight: bold;
     border-radius: 6px;
-    text-align: center;
     text-decoration: none;
     transition: 0.3s;
-    border: none;
+    margin-top: 20px;
 }
 
 .button:hover {
@@ -512,3 +531,4 @@ img {
 .button i {
     margin-left: 8px;
 }
+
