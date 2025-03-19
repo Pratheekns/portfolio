@@ -256,6 +256,22 @@ img {
   width: 200px;
   border-radius: 0.5rem;
 }
+.button {
+    display: inline-block;
+    background-color: #4db5ff; /* Blue button color */
+    color: #fff; /* White text */
+    padding: 12px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+.button:hover {
+    background-color: #3498db; /* Darker blue on hover */
+}
+
 
 /* ===== SKILLS =====*/
 .skills__container {
