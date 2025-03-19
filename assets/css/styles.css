@@ -208,16 +208,16 @@ img {
   color: var(--first-color);
 }
 .home__img {
-  position: absolute;
-  right: -5%;
-  top: 150px !important;
-  width: 280px;
+    position: absolute !important;
+    right: -10% !important; /* Move right */
+    top: 200px !important; /* Push further down */
+    width: 280px !important;
 }
 .home__img {
     margin-top: 100px !important; /* Pushes it down */
 }
 .home__blob {
-    transform: translateY(20px,120px); /* Move it further down */
+    transform: translate(20px, 150px) !important; /* Moves down */
 }
 .home__blob {
   fill: var(--first-color);
