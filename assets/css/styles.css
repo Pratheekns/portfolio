@@ -209,8 +209,8 @@ img {
 }
 .home__img {
   position: absolute;
-  right: 0;
-  bottom:-100px;
+  right: 100px;
+  bottom:-250px;
   width: 260px;
 }
 .home__blob {
