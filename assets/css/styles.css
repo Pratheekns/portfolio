@@ -210,14 +210,11 @@ img {
 .home__img {
   position: absolute;
   right: 0;
-  bottom:-260;
+  bottom:-60px;
   width: 260px;
 }
 .home__blob {
   fill: var(--first-color);
-}
-.home__blob {
-    transform: translateY(30px); /* Moves blob downward */
 }
 .home__blob-img {
   width: 360px;
