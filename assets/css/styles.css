@@ -181,11 +181,10 @@ img {
 /*===== HOME =====*/
 .home {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; /* Ensures text and image stay in place */
     align-items: center;
-    padding: 5rem 10%;
+    justify-content: space-between; /* Keeps text and image separate */
     position: relative;
+    padding: 5rem 10%;
 }
 .home__data {
   align-self: center;
@@ -211,26 +210,19 @@ img {
   color: var(--first-color);
 }
 .home__img {
-    position: relative;  /* Prevents jumping into other sections */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: -40px;  /* Move up */
-    margin-left: -30px; /* Move slightly left */
-    width: 250px;  /* Reduce size */
+    position: absolute; /* Keeps it inside the home section */
+    right: 5%; /* Adjust for better placement */
+    top: 65%; /* Moves image up */
+    width: 220px; /* Reduce size */
     height: auto;
+    transform: translateY(-50%); /* Adjusts vertical centering */
 }
 .home__img {
     margin-top: 100px !important; /* Pushes it down */
 }
 .home__blob {
-    position: relative; /* Change from absolute to relative */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: -50px; /* Move it up */
-    margin-left: 30px; /* Adjust left */
-    width: 300px; /* Reduce blob size */
+    width: 300px; /* Smaller blob */
+    transform: translate(-50px, 20px); /* Move it slightly left and up */
 }
 .home__blob {
   fill: var(--first-color);
