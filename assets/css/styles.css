@@ -210,11 +210,12 @@ img {
 }
 .home__img {
     position: absolute;
-    right: 15%;  /* Move it more to the right */
-    top: 5%;  /* Move it further up */
-    max-width: 250px; /* Adjust size */
+    right: 5%;  /* Moves it further right */
+    top: 10%;  /* Moves it further up */
+    max-width: 200px; /* Adjust size if needed */
     height: auto;
-    z-index: 1; /* Ensure it's above other elements */
+    transform: translateY(-50%);
+    z-index: 1; /* Keeps it above other elements */
 }
 .home__img {
     margin-top: 100px !important; /* Pushes it down */
