@@ -208,17 +208,16 @@ img {
   color: var(--first-color);
 }
 .home__img {
-    position: absolute;
-    right: -15%; /* Move left by increasing negative value */
-    top: 200px; /* Keep the height same */
-    width: 320px; /* Increase size */
+    position: absolute !important;
+    right: -10% !important; /* Move right */
+    top: 200px !important; /* Push further down */
+    width: 280px !important;
 }
 .home__img {
     margin-top: 100px !important; /* Pushes it down */
 }
 .home__blob {
-    transform: translate(-10px, 150px); /* Move left and down */
-    width: 350px; /* Increase blob size */
+    transform: translate(20px, 150px) !important; /* Moves down */
 }
 .home__blob {
   fill: var(--first-color);
