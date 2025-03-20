@@ -180,15 +180,14 @@ img {
 
 /*===== HOME =====*/
 .home {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 2rem; /* Reduce gap between elements */
-    padding: 4rem 0 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the left like in your image */
+  padding: 4rem 0 2rem;
+  position: relative;
 }
 .home__data {
-    text-align: center;
-    margin-bottom: 20px; /* Add space after text */
+  margin-bottom: 30px;
 }
 
 .home__title {
@@ -197,36 +196,30 @@ img {
 }
 .home__title-color {
   color: var(--first-color);
-}
 .home__social {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  margin-top: 30px;
+  margin-bottom: 60px; /* Add space between social links and image */
 }
 .home__social-icon {
-  width: max-content;
-  margin-bottom: var(--mb-2);
-  font-size: 1.5rem;
-  color: var(--second-color);
+  margin-right: var(--mb-4);
 }
 .home__social-icon:hover {
   color: var(--first-color);
 }
 .home__img {
-    position: relative; /* Change from absolute to relative */
-    right: auto; /* Remove right positioning */
-    top: auto; /* Remove top positioning */
-    max-width: 250px;
-    height: auto;
-    margin: 0 auto; /* Center horizontally */
-    transform: none; /* Remove the transform */
-    z-index: 1;
+  position: relative;
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -20px; /* Move it up to reduce the gap */
 }
 .home__img {
     margin-top: 20px !important; /* Reduce this value to move it up */
 }
 .home__blob {
-    width: 250px;
-    transform: none; /* Remove the transform */
+  width: 250px;
 }
 .home__blob {
   fill: var(--first-color);
