@@ -180,12 +180,15 @@ img {
 
 /*===== HOME =====*/
 .home {
-  position: relative;
-  row-gap: 5rem;
-  padding: 4rem 0 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem; /* Reduce gap between elements */
+    padding: 4rem 0 3rem;
 }
 .home__data {
-  align-self: center;
+    text-align: center;
+    margin-bottom: 20px; /* Add space after text */
 }
 
 .home__title {
@@ -209,20 +212,21 @@ img {
   color: var(--first-color);
 }
 .home__img {
-    position: absolute;
-    right: 5%;  /* Moves it further right */
-    top: 10%;  /* Moves it further up */
-    max-width: 200px; /* Adjust size if needed */
+    position: relative; /* Change from absolute to relative */
+    right: auto; /* Remove right positioning */
+    top: auto; /* Remove top positioning */
+    max-width: 250px;
     height: auto;
-    transform: translateY(-50%);
-    z-index: 1; /* Keeps it above other elements */
+    margin: 0 auto; /* Center horizontally */
+    transform: none; /* Remove the transform */
+    z-index: 1;
 }
 .home__img {
-    margin-top: 100px !important; /* Pushes it down */
+    margin-top: 20px !important; /* Reduce this value to move it up */
 }
 .home__blob {
-    width: 250px; /* Smaller blob */
-    transform: translate(-40px, 30px); /* Moves it slightly left and up */
+    width: 250px;
+    transform: none; /* Remove the transform */
 }
 .home__blob {
   fill: var(--first-color);
