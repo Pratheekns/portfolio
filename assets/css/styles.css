@@ -517,7 +517,7 @@ img {
 }
 /* ===== Qualification=====*/
 
-/* Fix the timeline layout */
+/* Fix the timeline alignment */
 .qualification__content {
     display: flex;
     flex-direction: column;
@@ -525,60 +525,52 @@ img {
     position: relative;
 }
 
-/* Vertical timeline line */
+/* Vertical timeline */
 .qualification__content::before {
     content: '';
     position: absolute;
-    left: 20px; /* Adjust to move the line properly */
+    left: 25px; /* Move timeline closer */
     top: 0;
     width: 2px;
     height: 100%;
     background-color: #0099ff;
 }
 
-/* Each qualification item */
-.qualification__item {
-    display: flex;
-    align-items: center;
-    gap: 2rem; /* Increase spacing between the text and timeline */
-    margin-bottom: 3rem;
-    position: relative;
-}
-
-/* Timeline dots */
+/* Timeline points */
 .qualification__dot {
     width: 12px;
     height: 12px;
     background-color: #0099ff;
     border-radius: 50%;
     position: absolute;
-    left: 14px; /* Adjust to align with the timeline */
+    left: 20px; /* Align dots with timeline */
 }
 
-/* Align text properly */
+/* Each item should be closer to the timeline */
+.qualification__item {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem; /* Reduce space between text and timeline */
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+/* Align job title properly */
 .qualification__item h3 {
-    margin-left: 50px; /* Moves the text away from the timeline */
+    margin-left: 40px; /* Reduce space between text and timeline */
     font-size: 1.2rem;
     font-weight: bold;
 }
 
-/* Ensure the calendar icon is aligned */
-.qualification__calendar {
-    display: flex;
-    align-items: center;
-    font-size: 0.9rem;
-    color: #666;
-    margin-left: 50px;
-}
-
-/* Adjust date box positioning */
+/* Fix the date box alignment */
 .qualification__date {
     background: #f8f8f8;
     padding: 8px 12px;
     border-radius: 8px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-    margin-left: 80px; /* Space from the timeline */
+    margin-left: 60px; /* Adjust spacing */
 }
+
 
 
 
