@@ -182,7 +182,8 @@ img {
 .home {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Keeps text and image separate */
+    justify-content: space-between; /* Ensures text and image stay apart */
+    flex-wrap: wrap; /* Prevents overlapping */
     position: relative;
     padding: 5rem 10%;
 }
@@ -210,19 +211,19 @@ img {
   color: var(--first-color);
 }
 .home__img {
-    position: absolute; /* Keeps it inside the home section */
-    right: 5%; /* Adjust for better placement */
-    top: 65%; /* Moves image up */
-    width: 220px; /* Reduce size */
+    position: absolute;
+    right: 10%; /* Adjusts placement */
+    top: 90%; /* Moves image just below "Data Science" */
+    width: 200px; /* Reduces size */
     height: auto;
-    transform: translateY(-50%); /* Adjusts vertical centering */
+    transform: translateY(-50%); /* Adjusts centering */
 }
 .home__img {
     margin-top: 100px !important; /* Pushes it down */
 }
 .home__blob {
-    width: 300px; /* Smaller blob */
-    transform: translate(-50px, 20px); /* Move it slightly left and up */
+    width: 250px; /* Smaller blob */
+    transform: translate(-40px, 30px); /* Moves it slightly left and up */
 }
 .home__blob {
   fill: var(--first-color);
