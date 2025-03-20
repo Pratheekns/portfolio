@@ -210,11 +210,11 @@ img {
 }
 .home__img {
     position: absolute;
-    right: 10%; /* Moves it further right */
-    top: 20%; /* Moves it up */
-    width: 180px; /* Keeps a good size */
+    right: 15%; /* Move it further right */
+    top: 5%; /* Push it higher */
+    width: 200px; /* Adjust size if needed */
     height: auto;
-    transform: translateY(-50%);
+    transform: translate(50%, -50%); /* Keeps the position centered properly */
 }
 .home__img {
     margin-top: 100px !important; /* Pushes it down */
