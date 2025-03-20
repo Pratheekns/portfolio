@@ -517,20 +517,16 @@ img {
 }
 /* ===== Qualification=====*/
 
-/* Center everything */
-.qualification {
-    text-align: center;
-    padding: 40px;
+.qualification__content {
+    display: none;
 }
 
-/* Toggle Buttons */
-.qualification__toggle {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-bottom: 20px;
+.qualification__content.active {
+    display: block;
+    animation: fadeIn 0.5s ease-in-out;
 }
 
+/* Button Styling */
 .toggle-btn {
     padding: 10px 20px;
     border: none;
@@ -546,16 +542,6 @@ img {
     color: white;
 }
 
-/* Timeline Container */
-.qualification__content {
-    display: none;
-}
-
-.qualification__content.active {
-    display: block;
-    animation: fadeIn 0.5s ease-in-out;
-}
-
 /* Timeline Styling */
 .timeline {
     position: relative;
@@ -565,7 +551,6 @@ img {
     margin: auto;
 }
 
-/* Timeline Dots */
 .timeline-item {
     position: relative;
     padding-bottom: 20px;
@@ -579,31 +564,6 @@ img {
     height: 15px;
     background-color: #0099ff;
     border-radius: 50%;
-}
-
-/* Timeline Content */
-.timeline-content {
-    background: #f9f9f9;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.timeline-content h4 {
-    margin: 0;
-}
-
-.date {
-    display: block;
-    font-size: 14px;
-    color: #666;
-    margin-top: 5px;
-}
-
-/* Animation */
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(-10px); }
-    to { opacity: 1; transform: translateY(0); }
 }
 
 
