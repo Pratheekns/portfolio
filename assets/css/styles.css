@@ -194,19 +194,23 @@ img {
 .home__title-color {
   color: var(--first-color);
 }
+/* Styling for Social Icons */
 .home__social {
-  display: flex;
-  flex-direction: column;
-}
-.social-icons {
     display: flex;
-    gap: 10px;  /* Adjust spacing between icons */
-    justify-content: center; /* Centers icons */
-    align-items: center; /* Aligns them properly */
-    margin-top: -10px; /* Moves icons closer to the Contact button */
+    justify-content: center; /* Centers the icons */
+    align-items: center; /* Aligns vertically */
+    gap: 15px; /* Adds space between icons */
+    margin-top: 15px; /* Moves icons closer to Contact button */
 }
+
+.home__social-icon {
+    font-size: 24px; /* Adjusts the icon size */
+    color: #333; /* Change this color if needed */
+    transition: 0.3s;
+}
+
 .home__social-icon:hover {
-  color: var(--first-color);
+    color: #0077b5; /* LinkedIn Blue */
 }
 .home__img {
     position: absolute;
