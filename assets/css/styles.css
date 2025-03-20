@@ -181,15 +181,16 @@ img {
 /*===== HOME =====*/
 .home {
     display: flex;
-    align-items: center; /* Align text & image in one line */
-    justify-content: flex-start; /* Keep text left-aligned */
-    flex-wrap: nowrap; /* Prevents text from stacking */
-    gap: 30px; /* Adds spacing between text and image */
+    align-items: center; /* Align text & image in one row */
+    justify-content: space-between; /* Pushes text left, image right */
+    flex-wrap: nowrap; /* Prevents text wrapping */
+    gap: 20px; /* Adds spacing between text and image */
 }
 .home__data {
-    flex: 1; /* Allows text to take the available space */
-    max-width: 50%; /* Limits text width */
+    flex: 1; /* Allows text to take space dynamically */
+    max-width: 55%; /* Restricts text width */
 }
+
 .home__title {
   font-size: var(--big-font-size);
   margin-bottom: var(--mb-5);
@@ -211,11 +212,11 @@ img {
   color: var(--first-color);
 }
 .home__img {
-    width: 180px; /* Adjust size */
+    width: 160px; /* Adjust for ideal proportion */
     height: auto;
     position: relative;
-    margin-left: 10px; /* Push slightly right */
-    align-self: center; /* Keeps image vertically aligned */
+    top: 10px; /* Moves image slightly down if needed */
+    margin-left: 20px; /* Fine-tune distance from text */
 }
 .home__img {
     margin-top: 100px !important; /* Pushes it down */
