@@ -181,14 +181,11 @@ img {
 /*===== HOME =====*/
 .home {
     display: flex;
-    align-items: center;
-    justify-content: space-between; /* Ensures text and image stay apart */
-    flex-wrap: wrap; /* Prevents overlapping */
-    position: relative;
-    padding: 5rem 10%;
+    align-items: center; /* Aligns text and image vertically */
+    justify-content: space-between; /* Creates space between text and image */
 }
 .home__data {
-  align-self: center;
+    flex: 1; /* Allows text to take up available space */
 }
 .home__title {
   font-size: var(--big-font-size);
@@ -211,12 +208,9 @@ img {
   color: var(--first-color);
 }
 .home__img {
-    position: relative; /* Change from absolute to relative */
-    display: block;
-    margin: 20px auto 0; /* Add spacing below text */
-    width: 140px; /* Adjust size */
+    width: 160px; /* Adjust size */
     height: auto;
-    top: 0; /* Reset previous top positioning */
+    margin-left: 20px; /* Space between text and image */
 }
 .home__img {
     margin-top: 100px !important; /* Pushes it down */
