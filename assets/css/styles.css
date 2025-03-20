@@ -209,11 +209,12 @@ img {
   color: var(--first-color);
 }
 .home__img {
-    width: 160px; /* Adjust for ideal proportion */
+    position: absolute;
+    right: 10%; /* Moves it further right */
+    top: 20%; /* Moves it up */
+    width: 180px; /* Keeps a good size */
     height: auto;
-    position: relative;
-    top: 10px; /* Moves image slightly down if needed */
-    margin-left: 20px; /* Fine-tune distance from text */
+    transform: translateY(-50%);
 }
 .home__img {
     margin-top: 100px !important; /* Pushes it down */
