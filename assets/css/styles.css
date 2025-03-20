@@ -180,9 +180,12 @@ img {
 
 /*===== HOME =====*/
 .home {
-  position: relative;
-  row-gap: 5rem;
-  padding: 4rem 0 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Ensures text and image stay in place */
+    align-items: center;
+    padding: 5rem 10%;
+    position: relative;
 }
 .home__data {
   align-self: center;
@@ -208,13 +211,14 @@ img {
   color: var(--first-color);
 }
 .home__img {
-    position: relative; /* Change from absolute to relative */
+    position: relative;  /* Prevents jumping into other sections */
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    margin-top: -40px; /* Move it up slightly */
-    margin-left: 40px; /* Move it left */
-    width: 260px; /* Reduce size */
+    justify-content: center;
+    align-items: center;
+    margin-top: -40px;  /* Move up */
+    margin-left: -30px; /* Move slightly left */
+    width: 250px;  /* Reduce size */
+    height: auto;
 }
 .home__img {
     margin-top: 100px !important; /* Pushes it down */
