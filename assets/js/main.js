@@ -50,6 +50,27 @@ const sr = ScrollReveal({
     delay: 200,
 //     reset: true
 });
+/*==================== switching between education and work ====================*/
+document.addEventListener("DOMContentLoaded", function () {
+    const educationTab = document.getElementById("education-tab");
+    const workTab = document.getElementById("work-tab");
+    const educationContent = document.getElementById("education-content");
+    const workContent = document.getElementById("work-content");
+
+    educationTab.addEventListener("click", function () {
+        educationContent.classList.remove("hidden");
+        workContent.classList.add("hidden");
+        educationTab.classList.add("active");
+        workTab.classList.remove("active");
+    });
+
+    workTab.addEventListener("click", function () {
+        workContent.classList.remove("hidden");
+        educationContent.classList.add("hidden");
+        workTab.classList.add("active");
+        educationTab.classList.remove("active");
+    });
+});
 
 sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{}); 
 sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400}); 
