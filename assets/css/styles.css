@@ -209,16 +209,16 @@ img {
 }
 .home__img {
     position: absolute;
-    right: -20%;  /* Move further left */
-    top: 350px;   /* Move further down */
-    width: 380px; /* Adjust size if needed */
+    right: -10%;   /* Moves left */
+    top: 50px;     /* Moves down */
+    width: 420px;  /* Adjusts size */
 }
 .home__img {
     margin-top: 100px !important; /* Pushes it down */
 }
 .home__blob {
-    transform: translate(-80px, 220px); /* Move left and down */
-    width: 400px; /* Slightly bigger */
+    transform: translate(-50px, 100px); /* Moves left and down */
+    width: 450px; /* Adjust blob size */
 }
 .home__blob {
   fill: var(--first-color);
