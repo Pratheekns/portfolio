@@ -212,12 +212,13 @@ img {
 }
 .home__img {
     position: absolute;
-    right: 10%;  /* Adjust to position it correctly */
-    top: 40%;  /* Reduce this further to move it up */
-    width: 160px; /* Reduce size slightly */
+    right: 8%; /* Move it slightly left if needed */
+    top: 25%; /* Significantly reduce this to push it up */
+    width: 140px; /* Adjust size */
     height: auto;
     transform: translateY(-50%);
 }
+
 
 .home__img {
     margin-top: 100px !important; /* Pushes it down */
