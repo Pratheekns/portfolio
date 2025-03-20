@@ -181,14 +181,11 @@ img {
 /*===== HOME =====*/
 .home {
     display: flex;
-    align-items: center; /* Aligns text and image vertically */
-    justify-content: flex-start; /* Aligns content to the left */
-    gap: 20px; /* Creates space between text and image */
-    flex-wrap: wrap; /* Ensures responsiveness */
+    align-items: center; /* Aligns content vertically */
+    gap: 20px; /* Adjust spacing between text and image */
 }
 .home__data {
-    flex: 1; /* Allows text to take up available space */
-    max-width: 60%; /* Adjust text width */
+    flex: 1; /* Allows text to take space */
 }
 .home__title {
   font-size: var(--big-font-size);
@@ -211,10 +208,11 @@ img {
   color: var(--first-color);
 }
 .home__img {
-    width: 160px; /* Adjust size */
+    width: 180px; /* Adjust size as needed */
     height: auto;
-    position: relative; /* Remove absolute positioning */
-    margin-left: 20px; /* Adds spacing from text */
+    position: relative; /* Ensures proper placement */
+    transform: translateY(-50%); /* Moves up slightly */
+    margin-left: 20px; /* Adjust spacing from text */
 }
 .home__img {
     margin-top: 100px !important; /* Pushes it down */
