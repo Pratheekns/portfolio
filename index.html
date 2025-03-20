@@ -154,22 +154,23 @@
 
             <!--===== Qualification =====-->
             
-       <div class="qualification">
+      <div class="qualification">
     <h2 class="qualification__title">Qualification</h2>
 
     <!-- Toggle Buttons -->
     <div class="qualification__toggle">
-        <button class="toggle-btn active" onclick="showQualification('education')">
+        <button id="edu-btn" class="toggle-btn active">
             <i class="bx bxs-graduation"></i> Education
         </button>
-        <button class="toggle-btn" onclick="showQualification('work')">
+        <button id="work-btn" class="toggle-btn">
             <i class="bx bxs-briefcase"></i> Work
         </button>
     </div>
 
-    <!-- Education Timeline -->
-    <div id="education" class="qualification__content active">
-        <div class="timeline">
+    <!-- Timeline Section -->
+    <div class="timeline-container">
+        <!-- Education Timeline -->
+        <div id="education" class="timeline">
             <div class="timeline-item">
                 <span class="dot"></span>
                 <div class="timeline-content">
@@ -181,25 +182,15 @@
             <div class="timeline-item">
                 <span class="dot"></span>
                 <div class="timeline-content">
-                    <h4>GCE Advance Level</h4>
-                    <p>St. Anthony’s College, Kandy</p>
-                    <span class="date">2012 - 2014</span>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <span class="dot"></span>
-                <div class="timeline-content">
                     <h4>BSc Management Information System</h4>
                     <p>NSBM Green University</p>
                     <span class="date">2015 - 2018</span>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Work Timeline -->
-    <div id="work" class="qualification__content">
-        <div class="timeline">
+        <!-- Work Timeline (Hidden by Default) -->
+        <div id="work" class="timeline" style="display: none;">
             <div class="timeline-item">
                 <span class="dot"></span>
                 <div class="timeline-content">
@@ -216,49 +207,10 @@
                     <span class="date">2019 - 2020</span>
                 </div>
             </div>
-            <div class="timeline-item">
-                <span class="dot"></span>
-                <div class="timeline-content">
-                    <h4>Trainee Banking Assistant</h4>
-                    <p>DFCC Head Office - Colombo</p>
-                    <span class="date">2017 - 2019</span>
-                </div>
-            </div>
         </div>
     </div>
 </div>
 
-
-    <!-- Work Timeline -->
-    <div id="work" class="qualification__content">
-        <div class="timeline">
-            <div class="timeline-item">
-                <span class="dot"></span>
-                <div class="timeline-content">
-                    <h4>Data Analyst - Digital Banking</h4>
-                    <p>DFCC Head Office - Colombo</p>
-                    <span class="date">2020 - Present</span>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <span class="dot"></span>
-                <div class="timeline-content">
-                    <h4>Banking Assistant</h4>
-                    <p>DFCC Head Office - Colombo</p>
-                    <span class="date">2019 - 2020</span>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <span class="dot"></span>
-                <div class="timeline-content">
-                    <h4>Trainee Banking Assistant</h4>
-                    <p>DFCC Head Office - Colombo</p>
-                    <span class="date">2017 - 2019</span>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
 
 
