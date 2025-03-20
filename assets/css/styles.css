@@ -568,5 +568,25 @@ img {
     background-color: #0099ff;
     border-radius: 50%;
 }
+.qualification__toggle button {
+    background-color: #007bff !important; /* Blue color */
+    color: white !important;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
 
+/* Ensure hover effect makes them slightly darker */
+.qualification__toggle button:hover {
+    background-color: #0056b3 !important; /* Darker blue */
+}
+
+/* Active button (when selected) */
+.qualification__toggle button.active {
+    background-color: #0056b3 !important; /* Even darker blue */
+}
 
