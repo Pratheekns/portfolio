@@ -182,12 +182,13 @@ img {
 .home {
     display: flex;
     align-items: center; /* Align text & image */
-    justify-content: flex-start; /* Keeps text aligned left */
-    gap: 20px; /* Creates space between text & image */
-    flex-wrap: wrap; /* Prevents overlap on smaller screens */
+    justify-content: space-between; /* Spread content properly */
+    flex-wrap: nowrap; /* Prevents text breaking into multiple lines */
+    gap: 15px; /* Adjust space between text and image */
 }
 .home__data {
     flex: 1; /* Allows text to take available space */
+    max-width: 60%; /* Prevents text from being too wide */
 }
 .home__title {
   font-size: var(--big-font-size);
@@ -210,13 +211,10 @@ img {
   color: var(--first-color);
 }
 .home__img {
-    width: 140px; /* Adjust size */
+    width: 150px; /* Adjust size */
     height: auto;
     position: relative;
-    top: 0;
-    left: 0;
-    transform: none; /* Removes unnecessary translation */
-    margin-left: 10px; /* Adjust to position closer to text */
+    margin-left: 20px; /* Push it slightly right */
 }
 .home__img {
     margin-top: 100px !important; /* Pushes it down */
