@@ -517,58 +517,61 @@ img {
 }
 /* ===== Qualification=====*/
 
-/* Container for the timeline */
+/* Timeline container */
 .qualification__container {
     display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Ensures proper alignment */
     position: relative;
-    justify-content: center;
+    margin-left: 50px; /* Move content closer to the timeline */
 }
 
-/* Vertical Line of the Timeline */
+/* Vertical timeline line */
 .qualification__container::before {
     content: '';
     position: absolute;
-    left: 30px;  /* Adjust this value to move the line closer */
+    left: 0px; /* Move the line closer */
     top: 0;
     width: 3px;
     height: 100%;
     background-color: #0099ff;
 }
 
-/* Align Items on the Timeline */
+/* Each qualification item */
 .qualification__item {
     display: flex;
     align-items: center;
-    gap: 20px; /* Reduce the spacing between timeline and text */
-    margin-bottom: 1.5rem;
     position: relative;
-    padding-left: 60px; /* Ensures text is closer to the line */
+    padding-left: 30px; /* Reduce the spacing from the timeline */
+    margin-bottom: 2rem;
 }
 
-/* Small Dot on the Timeline */
+/* Timeline dot */
 .qualification__dot {
-    width: 10px;
-    height: 10px;
+    width: 12px;
+    height: 12px;
     background-color: #0099ff;
     border-radius: 50%;
     position: absolute;
-    left: 22px;  /* Adjust this to align dots with the line */
+    left: -10px; /* Adjust to match the line */
+    top: 50%;
+    transform: translateY(-50%);
 }
 
-/* Styling for each item (Title + Description) */
+/* Job/Education Title */
 .qualification__item h3 {
     font-size: 1.2rem;
     font-weight: bold;
-    margin-left: 10px; /* Moves job titles left */
+    margin-left: 20px; /* Bring text closer to dots */
 }
 
-/* Styling for the date blocks */
+/* Date container */
 .qualification__date {
     background: #f8f8f8;
-    padding: 8px 12px;
+    padding: 6px 10px;
     border-radius: 8px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-    margin-left: 20px; /* Reduce extra spacing */
+    margin-left: 20px; /* Adjust space between title and date */
 }
 
 
