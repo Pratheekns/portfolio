@@ -517,60 +517,60 @@ img {
 }
 /* ===== Qualification=====*/
 
-/* Fix alignment of timeline */
-.qualification__content {
+/* Container for the timeline */
+.qualification__container {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
     position: relative;
-    padding-left: 50px; /* Move the content closer to the timeline */
+    justify-content: center;
 }
 
-/* Adjust the vertical timeline */
-.qualification__content::before {
+/* Vertical Line of the Timeline */
+.qualification__container::before {
     content: '';
     position: absolute;
-    left: 20px; /* Moves the vertical line closer */
+    left: 30px;  /* Adjust this value to move the line closer */
     top: 0;
-    width: 2px;
+    width: 3px;
     height: 100%;
     background-color: #0099ff;
 }
 
-/* Timeline dots */
-.qualification__dot {
-    width: 12px;
-    height: 12px;
-    background-color: #0099ff;
-    border-radius: 50%;
-    position: absolute;
-    left: 14px; /* Align dots with timeline */
-}
-
-/* Reduce gap between timeline and text */
+/* Align Items on the Timeline */
 .qualification__item {
     display: flex;
     align-items: center;
-    gap: 1rem; /* Reduce space between text and timeline */
+    gap: 20px; /* Reduce the spacing between timeline and text */
     margin-bottom: 1.5rem;
     position: relative;
+    padding-left: 60px; /* Ensures text is closer to the line */
 }
 
-/* Move job titles closer */
+/* Small Dot on the Timeline */
+.qualification__dot {
+    width: 10px;
+    height: 10px;
+    background-color: #0099ff;
+    border-radius: 50%;
+    position: absolute;
+    left: 22px;  /* Adjust this to align dots with the line */
+}
+
+/* Styling for each item (Title + Description) */
 .qualification__item h3 {
-    margin-left: 20px; /* Move job titles left to align with timeline */
     font-size: 1.2rem;
     font-weight: bold;
+    margin-left: 10px; /* Moves job titles left */
 }
 
-/* Adjust the date box alignment */
+/* Styling for the date blocks */
 .qualification__date {
     background: #f8f8f8;
     padding: 8px 12px;
     border-radius: 8px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-    margin-left: 40px; /* Reduce extra spacing */
+    margin-left: 20px; /* Reduce extra spacing */
 }
+
 
 
 
