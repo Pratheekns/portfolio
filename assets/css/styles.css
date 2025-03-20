@@ -209,16 +209,20 @@ img {
 }
 .home__img {
     position: absolute;
-    right: -10%;   /* Moves left */
-    top: 50px;     /* Moves down */
-    width: 420px;  /* Adjusts size */
+    right: -15%;  /* Moves the image left */
+    top: 150px;    /* Moves the image down */
+    width: 380px;  /* Adjust image size */
 }
+
 .home__img {
     margin-top: 100px !important; /* Pushes it down */
 }
 .home__blob {
-    transform: translate(-50px, 100px); /* Moves left and down */
-    width: 450px; /* Adjust blob size */
+    position: absolute;
+    right: -15%;   /* Moves the blob left */
+    top: 130px;     /* Moves the blob down */
+    width: 420px;  /* Adjust blob size */
+}
 }
 .home__blob {
   fill: var(--first-color);
