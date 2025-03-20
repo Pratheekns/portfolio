@@ -213,10 +213,10 @@ img {
 .home__img {
     position: absolute;
     right: 8%; /* Move it slightly left if needed */
-    top: 20% !important; /* Significantly reduce this to push it up */
+    top: 50% !important; /* Significantly reduce this to push it up */
     width: 140px; /* Adjust size */
     height: auto;
-    transform: none;
+    transform: translateY(-50%);
 }
 
 
