@@ -209,19 +209,16 @@ img {
 }
 .home__img {
     position: absolute;
-    right: -15%;  /* Moves the image left */
-    top: 250px;    /* Moves the image down */
-    width: 380px;  /* Adjust image size */
+    right: -15%; /* Move left by increasing negative value */
+    top: 200px; /* Keep the height same */
+    width: 320px; /* Increase size */
 }
-
 .home__img {
     margin-top: 100px !important; /* Pushes it down */
 }
 .home__blob {
-    position: absolute;
-    right: -15%;   /* Moves the blob left */
-    top: 230px;     /* Moves the blob down */
-    width: 300px;  /* Adjust blob size */
+    transform: translate(-10px, 150px); /* Move left and down */
+    width: 350px; /* Increase blob size */
 }
 .home__blob {
   fill: var(--first-color);
@@ -259,6 +256,22 @@ img {
   width: 200px;
   border-radius: 0.5rem;
 }
+.button {
+    display: inline-block;
+    background-color: #4db5ff; /* Blue button color */
+    color: #fff; /* White text */
+    padding: 12px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+.button:hover {
+    background-color: #3498db; /* Darker blue on hover */
+}
+
 
 /* ===== SKILLS =====*/
 .skills__container {
