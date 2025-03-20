@@ -209,16 +209,18 @@ img {
 }
 .home__img {
     position: absolute;
-    right: -15%; /* Move left by increasing negative value */
-    top: 200px; /* Keep the height same */
-    width: 320px; /* Increase size */
+    right: -25%;  /* Move the image further left */
+    top: 220px;    /* Move the image further down */
+    width: 380px;  /* Adjust size if necessary */
 }
 .home__img {
     margin-top: 100px !important; /* Pushes it down */
 }
 .home__blob {
-    transform: translate(-10px, 150px); /* Move left and down */
-    width: 350px; /* Increase blob size */
+    position: absolute;
+    right: -23%;  /* Move the blob further left */
+    top: 200px;    /* Move the blob further down */
+    width: 420px;  /* Adjust size to fit well */
 }
 .home__blob {
   fill: var(--first-color);
