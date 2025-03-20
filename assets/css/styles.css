@@ -180,15 +180,12 @@ img {
 
 /*===== HOME =====*/
 .home {
-    display: flex;
-    align-items: center; /* Align text & image in one row */
-    justify-content: space-between; /* Pushes text left, image right */
-    flex-wrap: nowrap; /* Prevents text wrapping */
-    gap: 20px; /* Adds spacing between text and image */
+  position: relative;
+  row-gap: 5rem;
+  padding: 4rem 0 5rem;
 }
 .home__data {
-    flex: 1; /* Allows text to take space dynamically */
-    max-width: 55%; /* Restricts text width */
+  align-self: center;
 }
 
 .home__title {
