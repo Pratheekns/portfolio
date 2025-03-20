@@ -154,71 +154,80 @@
 
             <!--===== Qualification =====-->
             
-           <section class="qualification section">
-    <h2 class="section-title">Qualification</h2>
-    <span class="section-subtitle">My personal journey</span>
+          <div class="qualification">
+    <h2 class="qualification__title">Qualification</h2>
+    
+    <!-- Toggle Buttons -->
+    <div class="qualification__toggle">
+        <button class="toggle-btn active" onclick="showQualification('education')">
+            <i class="bx bxs-graduation"></i> Education
+        </button>
+        <button class="toggle-btn" onclick="showQualification('work')">
+            <i class="bx bxs-briefcase"></i> Work
+        </button>
+    </div>
 
-    <div class="qualification__container">
-        <!-- Qualification Tabs -->
-        <div class="qualification__tabs">
-            <div class="qualification__button active" id="education-tab">
-                <i class="bx bx-book qualification__icon"></i> Education
-            </div>
-            <div class="qualification__button" id="work-tab">
-                <i class="bx bx-briefcase qualification__icon"></i> Work
-            </div>
-        </div>
-
-        <!-- Qualification Content -->
-        <div class="qualification__content">
-            <!-- Education Content -->
-            <div class="qualification__list" id="education-content">
-                <div class="qualification__item">
-                    <h3 class="qualification__title">Diploma in English</h3>
-                    <span class="qualification__subtitle">British Council, Kandy</span>
-                    <div class="qualification__calendar">
-                        <i class="bx bx-calendar"></i> 2011 - 2012
-                    </div>
-                </div>
-
-                <div class="qualification__item">
-                    <h3 class="qualification__title">BSc Management Information System</h3>
-                    <span class="qualification__subtitle">NSBM Green University</span>
-                    <div class="qualification__calendar">
-                        <i class="bx bx-calendar"></i> 2015 - 2018
-                    </div>
+    <!-- Education Timeline -->
+    <div id="education" class="qualification__content active">
+        <div class="timeline">
+            <div class="timeline-item">
+                <span class="dot"></span>
+                <div class="timeline-content">
+                    <h4>Diploma in English</h4>
+                    <p>British Council, Kandy</p>
+                    <span class="date">2011 - 2012</span>
                 </div>
             </div>
-
-            <!-- Work Content -->
-            <div class="qualification__list hidden" id="work-content">
-                <div class="qualification__item">
-                    <h3 class="qualification__title">Trainee Banking Assistant</h3>
-                    <span class="qualification__subtitle">DFCC Head Office - Colombo</span>
-                    <div class="qualification__calendar">
-                        <i class="bx bx-calendar"></i> 2017 - 2019
-                    </div>
+            <div class="timeline-item">
+                <span class="dot"></span>
+                <div class="timeline-content">
+                    <h4>GCE Advance Level</h4>
+                    <p>St. Anthony’s College, Kandy</p>
+                    <span class="date">2012 - 2014</span>
                 </div>
-
-                <div class="qualification__item">
-                    <h3 class="qualification__title">Banking Assistant</h3>
-                    <span class="qualification__subtitle">DFCC Head Office - Colombo</span>
-                    <div class="qualification__calendar">
-                        <i class="bx bx-calendar"></i> 2019 - 2020
-                    </div>
-                </div>
-
-                <div class="qualification__item">
-                    <h3 class="qualification__title">Data Analyst - Digital Banking</h3>
-                    <span class="qualification__subtitle">DFCC Head Office - Colombo</span>
-                    <div class="qualification__calendar">
-                        <i class="bx bx-calendar"></i> 2020 - Present
-                    </div>
+            </div>
+            <div class="timeline-item">
+                <span class="dot"></span>
+                <div class="timeline-content">
+                    <h4>BSc Management Information System</h4>
+                    <p>NSBM Green University</p>
+                    <span class="date">2015 - 2018</span>
                 </div>
             </div>
         </div>
     </div>
-</section>
+
+    <!-- Work Timeline -->
+    <div id="work" class="qualification__content">
+        <div class="timeline">
+            <div class="timeline-item">
+                <span class="dot"></span>
+                <div class="timeline-content">
+                    <h4>Data Analyst - Digital Banking</h4>
+                    <p>DFCC Head Office - Colombo</p>
+                    <span class="date">2020 - Present</span>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <span class="dot"></span>
+                <div class="timeline-content">
+                    <h4>Banking Assistant</h4>
+                    <p>DFCC Head Office - Colombo</p>
+                    <span class="date">2019 - 2020</span>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <span class="dot"></span>
+                <div class="timeline-content">
+                    <h4>Trainee Banking Assistant</h4>
+                    <p>DFCC Head Office - Colombo</p>
+                    <span class="date">2017 - 2019</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 
 
