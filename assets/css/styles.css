@@ -212,8 +212,8 @@ img {
 }
 .home__img {
     position: absolute;
-    right: 8%; /* Move it slightly left if needed */
-    top: 50% !important; /* Significantly reduce this to push it up */
+    right: 15%; /* Move it slightly left if needed */
+    top: 80% !important; /* Significantly reduce this to push it up */
     width: 140px; /* Adjust size */
     height: auto;
     transform: translateY(-50%);
