@@ -203,13 +203,16 @@ img {
     margin-top: 15px; /* Moves icons closer to Contact button */
 }
 
+/* Increase Social Icon Size */
 .home__social-icon {
-    font-size: 24px; /* Adjusts the icon size */
-    color: #333; /* Change this color if needed */
+    font-size: 28px; /* Increase size */
+    color: #333; /* Adjust color if needed */
     transition: 0.3s;
 }
 
+/* Make Icons Slightly Bigger on Hover */
 .home__social-icon:hover {
+    font-size: 32px; /* Slight increase on hover */
     color: #0077b5; /* LinkedIn Blue */
 }
 .home__img {
