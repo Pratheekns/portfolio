@@ -208,19 +208,25 @@ img {
   color: var(--first-color);
 }
 .home__img {
-    position: absolute;
-    right: 15%; /* Move slightly left */
-    top: 540px; /* Move further down */
-    width: 240px; /* Reduce size */
+    position: relative; /* Change from absolute to relative */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin-top: -40px; /* Move it up slightly */
+    margin-left: 40px; /* Move it left */
+    width: 260px; /* Reduce size */
 }
 .home__img {
     margin-top: 100px !important; /* Pushes it down */
 }
 .home__blob {
-    position: absolute;
-    right: 13%; /* Align with image */
-    top: 520px; /* Move slightly up */
-    width: 280px; /* Reduce blob size */
+    position: relative; /* Change from absolute to relative */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -50px; /* Move it up */
+    margin-left: 30px; /* Adjust left */
+    width: 300px; /* Reduce blob size */
 }
 .home__blob {
   fill: var(--first-color);
