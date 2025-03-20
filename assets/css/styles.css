@@ -517,43 +517,39 @@ img {
 }
 /* ===== Qualification=====*/
 
-.qualification__content {
-    display: none;
+.qualification {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers all content */
+    text-align: center;
 }
 
-.qualification__content.active {
-    display: block;
-    animation: fadeIn 0.5s ease-in-out;
+.qualification__toggle {
+    display: flex;
+    justify-content: center; /* Centers buttons */
+    gap: 10px;
+    margin-top: 10px;
 }
 
-/* Button Styling */
-.toggle-btn {
-    padding: 10px 20px;
-    border: none;
-    background-color: #f0f0f0;
-    cursor: pointer;
-    font-size: 16px;
-    border-radius: 5px;
-    transition: 0.3s;
+.timeline-container {
+    display: flex;
+    justify-content: center; /* Aligns timeline in center */
+    width: 100%;
+    margin-top: 20px;
 }
 
-.toggle-btn.active {
-    background-color: #0099ff;
-    color: white;
-}
-
-/* Timeline Styling */
 .timeline {
     position: relative;
-    padding-left: 40px;
     border-left: 3px solid #0099ff;
-    max-width: 500px;
-    margin: auto;
+    padding-left: 20px;
+    width: 50%;
+    min-width: 300px;
 }
 
 .timeline-item {
     position: relative;
     padding-bottom: 20px;
+    text-align: left; /* Ensures proper alignment */
 }
 
 .timeline-item .dot {
@@ -565,4 +561,5 @@ img {
     background-color: #0099ff;
     border-radius: 50%;
 }
+
 
