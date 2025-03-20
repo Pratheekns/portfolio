@@ -209,18 +209,18 @@ img {
 }
 .home__img {
     position: absolute;
-    right: 10%;  /* Move slightly left */
-    top: 500px;  /* Move image further down */
-    width: 260px; /* Reduce size */
+    right: 15%; /* Move slightly left */
+    top: 540px; /* Move further down */
+    width: 240px; /* Reduce size */
 }
 .home__img {
     margin-top: 100px !important; /* Pushes it down */
 }
 .home__blob {
     position: absolute;
-    right: 8%;  /* Move slightly left */
-    top: 480px;  /* Move slightly down */
-    width: 300px;  /* Reduce blob size */
+    right: 13%; /* Align with image */
+    top: 520px; /* Move slightly up */
+    width: 280px; /* Reduce blob size */
 }
 .home__blob {
   fill: var(--first-color);
