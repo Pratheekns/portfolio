@@ -212,11 +212,11 @@ img {
 }
 .home__img {
     position: absolute;
-    right: 10%; /* Adjusts placement */
-    top: 90%; /* Moves image just below "Data Science" */
-    width: 200px; /* Reduces size */
+    right: 10%;  /* Adjust if needed */
+    top: 80%;  /* Reduce this value to move it further up */
+    width: 180px; /* Slightly smaller */
     height: auto;
-    transform: translateY(-50%); /* Adjusts centering */
+    transform: translateY(-50%);
 }
 .home__img {
     margin-top: 100px !important; /* Pushes it down */
