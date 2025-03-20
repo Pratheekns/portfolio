@@ -211,12 +211,12 @@ img {
   color: var(--first-color);
 }
 .home__img {
-    position: absolute;
-    right: 5%;  /* Move it slightly left */
-    top: 50px;  /* Reduce top value to push it further up */
-    width: 140px;  /* Adjust the size */
+    position: relative; /* Change from absolute to relative */
+    display: block;
+    margin: 20px auto 0; /* Add spacing below text */
+    width: 140px; /* Adjust size */
     height: auto;
-    transform: none; /* Remove unnecessary translation */
+    top: 0; /* Reset previous top positioning */
 }
 .home__img {
     margin-top: 100px !important; /* Pushes it down */
