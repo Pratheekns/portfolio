@@ -201,9 +201,9 @@ img {
 .social-icons {
     display: flex;
     gap: 10px;  /* Adjust spacing between icons */
-    justify-content: left; /* Align with text */
-    margin-top: -20px; /* Moves icons up */
-    margin-left: 10px; /* Adjust left spacing if needed */
+    justify-content: center; /* Centers icons */
+    align-items: center; /* Aligns them properly */
+    margin-top: -10px; /* Moves icons closer to the Contact button */
 }
 .home__social-icon:hover {
   color: var(--first-color);
