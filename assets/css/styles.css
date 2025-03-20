@@ -209,15 +209,15 @@ img {
 }
 .home__img {
     position: absolute;
-    right: -5%;  /* Move left by decreasing the right value */
-    top: 250px;  /* Move down by increasing this value */
+    right: -20%;  /* Move left by decreasing the right value */
+    top: 80px;  /* Move down by increasing this value */
     width: 320px; /* Adjust image size */
 }
 .home__img {
     margin-top: 100px !important; /* Pushes it down */
 }
 .home__blob {
-    transform: translate(-30px, 180px); /* Move left and down */
+    transform: translate(-30px,50px); /* Move left and down */
     width: 360px; /* Adjust blob size */
 }
 .home__blob {
