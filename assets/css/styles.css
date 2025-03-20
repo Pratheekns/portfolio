@@ -181,11 +181,13 @@ img {
 /*===== HOME =====*/
 .home {
     display: flex;
-    align-items: center; /* Aligns content vertically */
-    gap: 20px; /* Adjust spacing between text and image */
+    align-items: center; /* Align text & image */
+    justify-content: flex-start; /* Keeps text aligned left */
+    gap: 20px; /* Creates space between text & image */
+    flex-wrap: wrap; /* Prevents overlap on smaller screens */
 }
 .home__data {
-    flex: 1; /* Allows text to take space */
+    flex: 1; /* Allows text to take available space */
 }
 .home__title {
   font-size: var(--big-font-size);
@@ -208,11 +210,13 @@ img {
   color: var(--first-color);
 }
 .home__img {
-    width: 180px; /* Adjust size as needed */
+    width: 140px; /* Adjust size */
     height: auto;
-    position: relative; /* Ensures proper placement */
-    transform: translateY(-50%); /* Moves up slightly */
-    margin-left: 20px; /* Adjust spacing from text */
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none; /* Removes unnecessary translation */
+    margin-left: 10px; /* Adjust to position closer to text */
 }
 .home__img {
     margin-top: 100px !important; /* Pushes it down */
