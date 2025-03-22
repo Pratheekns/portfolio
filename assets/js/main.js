@@ -70,7 +70,21 @@ function showQualification(type) {
   if (activeSection) activeSection.classList.add('active');
   if (activeButton) activeButton.classList.add('active');
 }
+function showQualification(type) {
+    const contents = document.querySelectorAll('.qualification__content');
+    const buttons = document.querySelectorAll('.toggle-btn');
 
+    contents.forEach(content => {
+        content.classList.remove('active');
+    });
+
+    buttons.forEach(btn => {
+        btn.classList.remove('active');
+    });
+
+    document.getElementById(type).classList.add('active');
+    event.currentTarget.classList.add('active');
+}
 
 sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{}); 
 sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400}); 
