@@ -52,26 +52,28 @@ const sr = ScrollReveal({
 });
 /*==================== switching between education and work ====================*/
 <script>
-  function showQualification(type) {
-    const educationContent = document.getElementById('education');
-    const workContent = document.getElementById('work');
+function showQualification(type) {
+    // Remove active class from all toggle buttons
     const buttons = document.querySelectorAll('.toggle-btn');
-
-    // Remove "active" from all buttons
     buttons.forEach(btn => btn.classList.remove('active'));
 
-    // Add "active" to the clicked button
-    document.querySelector(`.toggle-btn[onclick*="${type}"]`).classList.add('active');
-
-    // Show/hide content
-    if (type === 'education') {
-      educationContent.classList.add('active');
-      workContent.classList.remove('active');
-    } else {
-      workContent.classList.add('active');
-      educationContent.classList.remove('active');
+    // Add active class to the clicked button
+    const clickedButton = Array.from(buttons).find(btn => btn.innerText.toLowerCase().includes(type));
+    if (clickedButton) {
+        clickedButton.classList.add('active');
     }
-  }
+
+    // Hide all qualification contents
+    const sections = document.querySelectorAll('.qualification__content');
+    sections.forEach(section => section.classList.remove('active'));
+
+    // Show the selected qualification section
+    const activeSection = document.getElementById(type);
+    if (activeSection) {
+        activeSection.classList.add('active');
+    }
+}
+
 </script>
 
 
