@@ -51,22 +51,29 @@ const sr = ScrollReveal({
 //     reset: true
 });
 /*==================== switching between education and work ====================*/
-function showQualification(type) {
-  const education = document.getElementById('education');
-  const work = document.getElementById('work');
-  const buttons = document.querySelectorAll('.toggle-btn');
+<script>
+  function showQualification(type) {
+    const educationContent = document.getElementById('education');
+    const workContent = document.getElementById('work');
+    const buttons = document.querySelectorAll('.toggle-btn');
 
-  buttons.forEach(btn => btn.classList.remove('active'));
-  document.querySelector(`.toggle-btn[onclick*="${type}"]`).classList.add('active');
+    // Remove "active" from all buttons
+    buttons.forEach(btn => btn.classList.remove('active'));
 
-  if (type === 'education') {
-    education.classList.add('active');
-    work.classList.remove('active');
-  } else {
-    work.classList.add('active');
-    education.classList.remove('active');
+    // Add "active" to the clicked button
+    document.querySelector(`.toggle-btn[onclick*="${type}"]`).classList.add('active');
+
+    // Show/hide content
+    if (type === 'education') {
+      educationContent.classList.add('active');
+      workContent.classList.remove('active');
+    } else {
+      workContent.classList.add('active');
+      educationContent.classList.remove('active');
+    }
   }
-}
+</script>
+
 
 
 
