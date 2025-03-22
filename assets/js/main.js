@@ -53,27 +53,25 @@ const sr = ScrollReveal({
 /*==================== switching between education and work ====================*/
 <script>
 function showQualification(type) {
-    // Remove active class from all toggle buttons
-    const buttons = document.querySelectorAll('.toggle-btn');
-    buttons.forEach(btn => btn.classList.remove('active'));
+    // Toggle button active class
+    document.querySelectorAll('.toggle-btn').forEach(btn => {
+        btn.classList.remove('active');
+    });
 
-    // Add active class to the clicked button
-    const clickedButton = Array.from(buttons).find(btn => btn.innerText.toLowerCase().includes(type));
-    if (clickedButton) {
-        clickedButton.classList.add('active');
-    }
+    // Add active to clicked button
+    const clickedBtn = Array.from(document.querySelectorAll('.toggle-btn')).find(btn =>
+        btn.textContent.toLowerCase().includes(type)
+    );
+    if (clickedBtn) clickedBtn.classList.add('active');
 
-    // Hide all qualification contents
-    const sections = document.querySelectorAll('.qualification__content');
-    sections.forEach(section => section.classList.remove('active'));
+    // Toggle timeline sections
+    document.querySelectorAll('.qualification__content').forEach(section => {
+        section.classList.remove('active');
+    });
 
-    // Show the selected qualification section
     const activeSection = document.getElementById(type);
-    if (activeSection) {
-        activeSection.classList.add('active');
-    }
+    if (activeSection) activeSection.classList.add('active');
 }
-
 </script>
 
 
