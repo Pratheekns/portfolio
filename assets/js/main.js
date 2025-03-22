@@ -52,26 +52,25 @@ const sr = ScrollReveal({
 });
 /*==================== switching between education and work ====================*/
 
-function showQualification(id) {
-  // Hide all sections
-  const contents = document.querySelectorAll('.qualification__content');
-  contents.forEach(content => {
-    content.classList.remove('active');
+function showQualification(type) {
+  // Hide all timeline content
+  const sections = document.querySelectorAll('.qualification__content');
+  sections.forEach(section => {
+    section.classList.remove('active');
   });
 
-  // Remove active class from all buttons
+  // Remove active class from all toggle buttons
   const buttons = document.querySelectorAll('.qualification__toggle .toggle-btn');
-  buttons.forEach(button => {
-    button.classList.remove('active');
-  });
+  buttons.forEach(btn => btn.classList.remove('active'));
 
-  // Show selected section
-  document.getElementById(id).classList.add('active');
+  // Show the selected section and activate the button
+  const activeSection = document.getElementById(type);
+  const activeButton = Array.from(buttons).find(btn => btn.textContent.toLowerCase().includes(type));
 
-  // Add active class to the clicked button
-  const button = Array.from(buttons).find(btn => btn.textContent.trim().toLowerCase().includes(id));
-  if (button) button.classList.add('active');
+  if (activeSection) activeSection.classList.add('active');
+  if (activeButton) activeButton.classList.add('active');
 }
+
 
 sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{}); 
 sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400}); 
