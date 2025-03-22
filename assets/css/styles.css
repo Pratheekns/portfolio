@@ -574,13 +574,14 @@ img {
   width: 50%;
 }
 .timeline-content {
-  background: white;
-  padding: 20px;
-  position: relative;
-  border-radius: 6px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  width: 240px;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 260px; /* or your preferred width */
+  text-align: center;  /* ⭐ Center-aligns the text */
 }
+
 
 /* Ensure dots align properly with the timeline */
 .timeline-item .dot {
