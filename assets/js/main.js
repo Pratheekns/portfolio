@@ -53,33 +53,16 @@ const sr = ScrollReveal({
 /*==================== switching between education and work ====================*/
 
 function showQualification(type) {
-  // Hide all timeline content
-  const sections = document.querySelectorAll('.qualification__content');
-  sections.forEach(section => {
-    section.classList.remove('active');
-  });
+  const contents = document.querySelectorAll('.qualification__content');
+  const buttons = document.querySelectorAll('.qualification__toggle button');
 
-  // Remove active class from all toggle buttons
-  const buttons = document.querySelectorAll('.qualification__toggle .toggle-btn');
+  // Hide all content and remove active from buttons
+  contents.forEach(content => content.classList.remove('active'));
   buttons.forEach(btn => btn.classList.remove('active'));
 
-  // Show the selected section and activate the button
-  const activeSection = document.getElementById(type);
-  const activeButton = Array.from(buttons).find(btn => btn.textContent.toLowerCase().includes(type));
-
-  if (activeSection) activeSection.classList.add('active');
-  if (activeButton) activeButton.classList.add('active');
-}
-function showQualification(type) {
-    const contents = document.querySelectorAll('.qualification__content');
-    const buttons = document.querySelectorAll('.toggle-btn');
-
-    contents.forEach(content => content.classList.remove('active'));
-    buttons.forEach(btn => btn.classList.remove('active'));
-
-    document.getElementById(type).classList.add('active');
-    const button = Array.from(buttons).find(btn => btn.innerText.toLowerCase().includes(type));
-    if (button) button.classList.add('active');
+  // Show selected content and activate button
+  document.getElementById(type).classList.add('active');
+  document.querySelector(`.toggle-btn[onclick*="${type}"]`).classList.add('active');
 }
 
 
