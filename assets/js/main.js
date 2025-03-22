@@ -74,17 +74,14 @@ function showQualification(type) {
     const contents = document.querySelectorAll('.qualification__content');
     const buttons = document.querySelectorAll('.toggle-btn');
 
-    contents.forEach(content => {
-        content.classList.remove('active');
-    });
-
-    buttons.forEach(btn => {
-        btn.classList.remove('active');
-    });
+    contents.forEach(content => content.classList.remove('active'));
+    buttons.forEach(btn => btn.classList.remove('active'));
 
     document.getElementById(type).classList.add('active');
-    event.currentTarget.classList.add('active');
+    const button = Array.from(buttons).find(btn => btn.innerText.toLowerCase().includes(type));
+    if (button) button.classList.add('active');
 }
+
 
 sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{}); 
 sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400}); 
