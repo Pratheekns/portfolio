@@ -546,30 +546,46 @@ img {
 }
 
 .timeline {
-    position: relative;
-    border-left: 3px solid #007bff;
-    padding-left: 20px; /* Adjust for better alignment */
-    width: 50%;
-    min-width: 300px;
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+  padding: 40px 0;
+}
+/* Timeline vertical line */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 4px;
+  background-color: #007bff;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -2px;
 }
 .timeline-item {
-    position: relative;
-    padding-bottom: 20px;
-    text-align: left;
+  padding: 20px 30px;
+  position: relative;
+  width: 50%;
+}
+.timeline-content {
+  background: white;
+  padding: 20px;
+  position: relative;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 /* Ensure dots align properly with the timeline */
 .timeline-item .dot {
-    position: absolute;
-    left: -18px; /* Move dot closer to the timeline */
-    top: 50%; /* Center dot vertically */
-    transform: translateY(-50%); /* Ensure proper centering */
-    width: 12px; /* Maintain a good size */
-    height: 12px;
-    background-color: #007bff; /* Blue color */
-    border-radius: 50%;
-    border: 2px solid white; /* Optional: Creates a nice border effect */
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3); /* Optional: Adds shadow */
+  position: absolute;
+  top: 20px;
+  width: 14px;
+  height: 14px;
+  background-color: #007bff;
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  z-index: 1;
 }
 .qualification__toggle button {
     background-color: #007bff !important; /* Blue color */
@@ -581,6 +597,50 @@ img {
     border-radius: 5px;
     margin: 5px;
     transition: background-color 0.3s ease-in-out;
+}
+/* Left timeline items */
+.timeline-item.left {
+  left: 0;
+  text-align: right;
+}
+
+.timeline-item.left .dot {
+  right: -7px;
+}
+
+.timeline-item.left .timeline-content {
+  margin-right: 20px;
+}
+
+/* Right timeline items */
+.timeline-item.right {
+  left: 50%;
+  text-align: left;
+}
+
+.timeline-item.right .dot {
+  left: -7px;
+}
+
+.timeline-item.right .timeline-content {
+  margin-left: 20px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .timeline-item,
+  .timeline-item.left,
+  .timeline-item.right {
+    left: 0 !important;
+    width: 100%;
+    text-align: left;
+  }
+  .timeline-item .dot {
+    left: -7px;
+  }
+  .timeline-item .timeline-content {
+    margin: 0 0 20px 20px;
+  }
 }
 
 /* Ensure hover effect makes them slightly darker */
