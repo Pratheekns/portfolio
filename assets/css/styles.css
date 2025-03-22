@@ -608,8 +608,9 @@ img {
 }
 /* Left timeline items */
 .timeline-item.left {
-  left: 0;
-  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 40px;  /* Adjust as needed */
 }
 
 .timeline-item.left .dot {
@@ -622,8 +623,9 @@ img {
 
 /* Right timeline items */
 .timeline-item.right {
-  left: 50%;
-  text-align: left;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 40px;  /* Adjust as needed */
 }
 
 .timeline-item.right .dot {
