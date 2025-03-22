@@ -52,22 +52,22 @@ const sr = ScrollReveal({
 });
 /*==================== switching between education and work ====================*/
 function showQualification(type) {
-    // Hide all qualification contents
-    document.querySelectorAll('.qualification__content').forEach((section) => {
-        section.classList.remove('active');
-    });
+  const education = document.getElementById('education');
+  const work = document.getElementById('work');
+  const buttons = document.querySelectorAll('.toggle-btn');
 
-    // Show selected qualification
-    document.getElementById(type).classList.add('active');
+  buttons.forEach(btn => btn.classList.remove('active'));
+  document.querySelector(`.toggle-btn[onclick*="${type}"]`).classList.add('active');
 
-    // Remove 'active' class from all buttons
-    document.querySelectorAll('.toggle-btn').forEach((btn) => {
-        btn.classList.remove('active');
-    });
-
-    // Add 'active' class to clicked button
-    event.currentTarget.classList.add('active');
+  if (type === 'education') {
+    education.classList.add('active');
+    work.classList.remove('active');
+  } else {
+    work.classList.add('active');
+    education.classList.remove('active');
+  }
 }
+
 
 
 
