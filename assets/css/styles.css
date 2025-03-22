@@ -537,7 +537,13 @@ img {
     font-size: 2rem;
     margin-bottom: 20px;
 }
+.qualification__content {
+  display: none;
+}
 
+.qualification__content.active {
+  display: block;
+}
 .timeline-container {
     display: flex;
     justify-content: center;
