@@ -545,63 +545,50 @@ img {
     margin-top: 20px;
 }
 
-/* Timeline Container */
 .timeline {
     position: relative;
-    border-left: 3px solid #007bff; /* Timeline Line */
-    padding: 0 20px;
+    border-left: 3px solid #007bff;
+    padding-left: 20px; /* Adjust for better alignment */
     width: 50%;
     min-width: 300px;
-    margin: auto;
 }
-
-/* Timeline Item */
 .timeline-item {
     position: relative;
-    width: 100%;
-    padding: 20px 40px;
-    display: flex;
-    align-items: center;
+    padding-bottom: 20px;
+    text-align: left;
 }
 
-/* Alternate Items */
-.timeline-item:nth-child(odd) {
-    flex-direction: row-reverse; /* Flip order */
-    text-align: right;
-}
-
-.timeline-item:nth-child(even) {
-    flex-direction: row;
-}
-
-/* Dot Styling */
+/* Ensure dots align properly with the timeline */
 .timeline-item .dot {
     position: absolute;
-    left: -27px; /* Default for left */
-    top: 50%;
-    transform: translateY(-50%);
-    width: 14px;
-    height: 14px;
-    background-color: #007bff;
+    left: -18px; /* Move dot closer to the timeline */
+    top: 50%; /* Center dot vertically */
+    transform: translateY(-50%); /* Ensure proper centering */
+    width: 12px; /* Maintain a good size */
+    height: 12px;
+    background-color: #007bff; /* Blue color */
     border-radius: 50%;
-    border: 3px solid white;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    border: 2px solid white; /* Optional: Creates a nice border effect */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3); /* Optional: Adds shadow */
+}
+.qualification__toggle button {
+    background-color: #007bff !important; /* Blue color */
+    color: white !important;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+    transition: background-color 0.3s ease-in-out;
 }
 
-/* Right Side Dots */
-.timeline-item:nth-child(odd) .dot {
-    left: auto;
-    right: -27px;
+/* Ensure hover effect makes them slightly darker */
+.qualification__toggle button:hover {
+    background-color: #0056b3 !important; /* Darker blue */
 }
 
-/* Timeline Content */
-.timeline-content {
-    background: white;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 300px;
+/* Active button (when selected) */
+.qualification__toggle button.active {
+    background-color: #0056b3 !important; /* Even darker blue */
 }
-
-
