@@ -52,26 +52,27 @@ const sr = ScrollReveal({
 });
 /*==================== switching between education and work ====================*/
 
-function showQualification(type) {
-    // Toggle button active class
-    document.querySelectorAll('.toggle-btn').forEach(btn => {
-        btn.classList.remove('active');
-    });
+function showQualification(id) {
+  // Hide all sections
+  const contents = document.querySelectorAll('.qualification__content');
+  contents.forEach(content => {
+    content.classList.remove('active');
+  });
 
-    // Add active to clicked button
-    const clickedBtn = Array.from(document.querySelectorAll('.toggle-btn')).find(btn =>
-        btn.textContent.toLowerCase().includes(type)
-    );
-    if (clickedBtn) clickedBtn.classList.add('active');
+  // Remove active class from all buttons
+  const buttons = document.querySelectorAll('.qualification__toggle .toggle-btn');
+  buttons.forEach(button => {
+    button.classList.remove('active');
+  });
 
-    // Toggle timeline sections
-    document.querySelectorAll('.qualification__content').forEach(section => {
-        section.classList.remove('active');
-    });
+  // Show selected section
+  document.getElementById(id).classList.add('active');
 
-    const activeSection = document.getElementById(type);
-    if (activeSection) activeSection.classList.add('active');
+  // Add active class to the clicked button
+  const button = Array.from(buttons).find(btn => btn.textContent.trim().toLowerCase().includes(id));
+  if (button) button.classList.add('active');
 }
+
 sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{}); 
 sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400}); 
 sr.reveal('.home__social-icon',{ interval: 200}); 
