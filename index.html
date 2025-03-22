@@ -278,6 +278,10 @@
         <script src="https://unpkg.com/scrollreveal"></script>
 
         <!--===== MAIN JS =====-->
-        <script src="assets/js/main.js"></script>
+        <script src="assets/js/main.js">
+            document.addEventListener('DOMContentLoaded', () => {
+    showQualification('education'); // Set initial state
+  });
+        </script>
     </body>
 </html>
