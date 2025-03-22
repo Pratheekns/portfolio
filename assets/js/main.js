@@ -51,7 +51,7 @@ const sr = ScrollReveal({
 //     reset: true
 });
 /*==================== switching between education and work ====================*/
-<script>
+
 function showQualification(type) {
     // Toggle button active class
     document.querySelectorAll('.toggle-btn').forEach(btn => {
@@ -72,12 +72,6 @@ function showQualification(type) {
     const activeSection = document.getElementById(type);
     if (activeSection) activeSection.classList.add('active');
 }
-</script>
-
-
-
-
-
 sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{}); 
 sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400}); 
 sr.reveal('.home__social-icon',{ interval: 200}); 
