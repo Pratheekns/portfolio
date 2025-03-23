@@ -553,9 +553,9 @@ img {
 
 .timeline {
   position: relative;
-  margin: 2rem auto;
-  padding-left: 30px;
-  border-left: 3px solid #0099ff;
+  max-width: 800px;
+  margin: auto;
+  padding: 40px 0;
 }
 /* Timeline vertical line */
 .timeline::after {
@@ -569,35 +569,29 @@ img {
   margin-left: -2px;
 }
 .timeline-item {
+  padding: 20px 30px;
   position: relative;
-  width: 100%;
-  display: flex;
-  margin: 2rem 0;
+  width: 50%;
 }
-.timeline-content {
-  background: white;
-  padding: 1.5rem;
-  width: 300px; /* wider box */
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+.timeline-item .timeline-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 
 /* Ensure dots align properly with the timeline */
 .timeline-item .dot {
   position: absolute;
-  left: -8px; /* aligns dot with the vertical line */
-  top: 10px;
   width: 12px;
   height: 12px;
-  background-color: #0099ff;
+  background: #007bff;
   border-radius: 50%;
-  border: 2px solid white;
-  z-index: 2;
+  top: 20px;
+  z-index: 1;
 }
 .qualification__toggle button {
     background-color: #007bff !important; /* Blue color */
@@ -611,17 +605,20 @@ img {
     transition: background-color 0.3s ease-in-out;
 }
 /* Left timeline items */
-.timeline-item.left,
-.timeline-item.right {
-  justify-content: center;
-  margin: 0 auto;
+.timeline-item.left {
+  left: 0;
 }
 
-.timeline-item.left .dot,
-.timeline-item.right .dot {
-  top: 12px;
+.timeline-item.right {
   left: 50%;
-  transform: translateX(-50%);
+}
+
+.timeline-item.left .dot {
+  right: -6px;
+}
+
+.timeline-item.right .dot {
+  left: -6px;
 }
 
 .timeline-item.left .timeline-content {
