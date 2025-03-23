@@ -553,9 +553,9 @@ img {
 
 .timeline {
   position: relative;
-  max-width: 800px;
-  margin: auto;
-  padding: 40px 0;
+  margin: 2rem auto;
+  padding-left: 30px;
+  border-left: 3px solid #0099ff;
 }
 /* Timeline vertical line */
 .timeline::after {
@@ -569,31 +569,32 @@ img {
   margin-left: -2px;
 }
 .timeline-item {
-  padding: 20px 30px;
   position: relative;
-  width: 50%;
+  width: 100%;
+  display: flex;
+  margin: 2rem 0;
 }
 .timeline-content {
-  background-color: #fff;
+  background: white;
   padding: 1rem;
+  width: 260px;
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  width: 260px; /* or your preferred width */
-  text-align: center;  /* ⭐ Center-aligns the text */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
 
 /* Ensure dots align properly with the timeline */
 .timeline-item .dot {
   position: absolute;
-  top: 20px;
-  width: 14px;
-  height: 14px;
-  background-color: #007bff;
+  left: -8px; /* aligns dot with the vertical line */
+  top: 10px;
+  width: 12px;
+  height: 12px;
+  background-color: #0099ff;
   border-radius: 50%;
-  border: 3px solid white;
-  box-shadow: 0 0 5px rgba(0,0,0,0.2);
-  z-index: 1;
+  border: 2px solid white;
+  z-index: 2;
 }
 .qualification__toggle button {
     background-color: #007bff !important; /* Blue color */
@@ -608,9 +609,8 @@ img {
 }
 /* Left timeline items */
 .timeline-item.left {
-  display: flex;
   justify-content: flex-end;
-  margin-right: 40px;  /* Adjust as needed */
+  margin-right: 40px;
 }
 
 .timeline-item.left .dot {
@@ -623,9 +623,8 @@ img {
 
 /* Right timeline items */
 .timeline-item.right {
-  display: flex;
   justify-content: flex-start;
-  margin-left: 40px;  /* Adjust as needed */
+  margin-left: 40px;
 }
 
 .timeline-item.right .dot {
