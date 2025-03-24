@@ -664,3 +664,44 @@ img {
   border-radius: 6px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
+/* ===== NGO=====*/
+.ngos {
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.ngos__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.ngo-card {
+  width: 150px;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.ngo-card:hover {
+  transform: translateY(-5px);
+}
+
+.ngo-card img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.ngo-card p {
+  margin-top: 0.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #112e51;
+}
+
