@@ -674,34 +674,35 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2rem;
-  margin-top: 2rem;
+  gap: 2.5rem;
+  margin-top: 2.5rem;
 }
 
 .ngo-card {
-  width: 150px;
-  padding: 1rem;
-  border-radius: 12px;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  width: 220px; /* Increased width */
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.08);
   background-color: #fff;
   transition: transform 0.3s ease;
+  text-align: center;
 }
 
 .ngo-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-8px);
 }
 
 .ngo-card img {
-  width: 100%;
-  height: auto;
+  width: 100px; /* Increased image size */
+  height: 100px;
   object-fit: contain;
-  border-radius: 8px;
+  margin-bottom: 1rem;
 }
 
+
 .ngo-card p {
-  margin-top: 0.5rem;
-  font-weight: 600;
-  font-size: 1rem;
-  color: #112e51;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #0e1a2b;
 }
 
