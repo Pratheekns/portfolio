@@ -267,10 +267,14 @@
 
                 <div class="contact__container bd-grid">
                   <form action="https://formsubmit.co/pratheekns1204@gmail.com" method="POST" class="contact__form">
-                         <input type="text" name="name" placeholder="Name" class="contact__input" required>
-                          <input type="email" name="email" placeholder="Email" class="contact__input" required>
-                          <textarea name="message" cols="30" rows="10" class="contact__input" placeholder="Your Message" required></textarea>
-                          <input type="submit" value="Send" class="contact__button button">
+                  <input type="text" name="name" placeholder="Name" class="contact__input" required>
+                  <input type="email" name="email" placeholder="Email" class="contact__input" required>
+                  <textarea name="message" cols="30" rows="10" class="contact__input" placeholder="Your Message" required></textarea>
+
+                  <!-- Redirect to home after submission -->
+                  <input type="hidden" name="_next" value="https://pratheekns.github.io/portfolio/">
+
+                  <input type="submit" value="Send" class="contact__button button">
                 </form>
                 </div>
             </section>
