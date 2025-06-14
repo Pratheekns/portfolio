@@ -812,3 +812,32 @@ img {
   margin-right: 0 !important;
   border-radius: 0;
 }
+/* === CONTACT FIXES FOR ALIGNMENT & ORDER === */
+.contact__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.contact__follow {
+  margin-top: 2rem;
+}
+
+.contact__follow h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+.contact__text .label {
+  font-weight: 700;
+  display: block;
+  margin-bottom: 0.2rem;
+  color: #0f172a;
+}
+
+.contact__text p {
+  font-weight: 600;
+  margin: 0;
+}
