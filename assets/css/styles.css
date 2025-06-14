@@ -805,3 +805,10 @@ img {
   margin-top: 1.2rem;
   color: #64748b;
 }
+/* ===== FULL-WIDTH FOOTER FIX ===== */
+.full-width {
+  width: 100vw;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  border-radius: 0;
+}
