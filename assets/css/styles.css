@@ -215,25 +215,26 @@ img {
     font-size: 32px; /* Slight increase on hover */
     color: #0077b5; /* LinkedIn Blue */
 }
+/*===== HOME IMAGE FIXED POSITION =====*/
 .home__img {
     position: absolute;
-    right: -15%; /* Move left by increasing negative value */
-    top: 200px; /* Keep the height same */
-    width: 320px; /* Increase size */
+    right: -15%;
+    top: 120px; /* Moved up from 200px */
+    width: 320px;
 }
-.home__img {
-    margin-top: 100px !important; /* Pushes it down */
-}
+
+/* Blob shape styling */
 .home__blob {
-    transform: translate(-10px, 150px); /* Move left and down */
-    width: 350px; /* Increase blob size */
+    transform: translate(-10px, 150px); /* Fine-tune X/Y position of blob */
+    width: 350px;
+    fill: var(--first-color);
 }
-.home__blob {
-  fill: var(--first-color);
-}
+
+/* Blob inner image (avatar/illustration) */
 .home__blob-img {
-  width: 360px;
+    width: 360px;
 }
+
 
 /*BUTTONS*/
 .button {
