@@ -372,6 +372,29 @@ img {
   cursor: pointer;
   margin-left: auto;
 }
+.contact__item {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.contact__item span {
+  font-weight: 600;
+  min-width: 60px;
+  display: inline-block;
+}
+
+.contact__item p {
+  font-weight: 600;
+  margin: 0;
+}
+
+.contact__info h4 {
+  font-weight: 700;
+  margin-top: 2rem;
+}
+
 
 /* ===== FOOTER =====*/
 .footer {
