@@ -372,29 +372,6 @@ img {
   cursor: pointer;
   margin-left: auto;
 }
-.contact__item {
-  display: flex;
-  align-items: center;
-  gap: 0.8rem;
-  margin-bottom: 1rem;
-}
-
-.contact__item span {
-  font-weight: 600;
-  min-width: 60px;
-  display: inline-block;
-}
-
-.contact__item p {
-  font-weight: 600;
-  margin: 0;
-}
-
-.contact__info h4 {
-  font-weight: 700;
-  margin-top: 2rem;
-}
-
 
 /* ===== FOOTER =====*/
 .footer {
@@ -733,105 +710,32 @@ img {
   color: #0a0a23;
 }
 
-/* ===== CONTACT (MODERNIZED LAYOUT) ===== */
-.contact__container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
-}
-.contact__info h3,
-.contact__form-box h3 {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-  color: #0f172a;
-}
-.contact__info p {
-  margin-bottom: 1.2rem;
-  color: #475569;
-  font-size: 0.95rem;
-}
-.contact__item {
+/* ===== CONTACT TEXT ALIGNMENT FIX ===== */
+.contact__text {
   display: flex;
-  align-items: center;
-  gap: 0.8rem;
-  margin-bottom: 1rem;
-}
-.contact__icon {
-  font-size: 1.4rem;
-  padding: 0.5rem;
-  color: white;
-  border-radius: 8px;
-}
-.contact__social {
-  display: flex;
-  gap: 1rem;
-  margin-top: 0.5rem;
-}
-.contact__social-icon {
-  font-size: 1.4rem;
-  padding: 0.4rem;
-  border-radius: 6px;
-  background-color: #e5e7eb;
-  transition: 0.3s;
-}
-.contact__social-icon.github:hover {
-  background-color: #24292f;
-  color: white;
-}
-.contact__social-icon.linkedin:hover {
-  background-color: #0077b5;
-  color: white;
-}
-.contact__form-box p {
-  font-size: 0.9rem;
-  margin-bottom: 1rem;
-  color: #64748b;
-}
-.contact__form-group {
-  display: flex;
-  gap: 1rem;
-  margin-bottom: 1rem;
-}
-.contact__form input,
-.contact__form textarea {
-  width: 100%;
-  padding: 1rem;
-  border-radius: 0.5rem;
-  border: 1px solid #cbd5e1;
-  outline: none;
-  font-size: 1rem;
-}
-.contact__form-box {
-  align-self: start;
+  flex-direction: column;
+  line-height: 1.4;
 }
 
-/* ===== FOOTER (UPDATED) ===== */
-.footer {
-  background-color: #0f172a;
-  color: #94a3b8;
-  text-align: center;
-  padding: 2rem 1rem;
-  margin-top: 5rem;
-}
-.footer__title {
-  color: #60a5fa;
-  font-size: 1.4rem;
+.contact__text .label {
   font-weight: 600;
+  color: #0a0a23;
+  margin-bottom: 0.2rem;
 }
-.footer__subtitle {
-  font-size: 0.95rem;
-  margin-top: 0.2rem;
+
+.contact__text p {
+  font-weight: 600;
+  margin: 0;
+  color: #475569;
 }
-.footer__copy {
-  font-size: 0.8rem;
-  margin-top: 1.2rem;
-  color: #64748b;
+
+/* ===== FOLLOW ME ALIGNMENT FIX ===== */
+.contact__follow {
+  margin-top: 2rem;
+  text-align: left;
 }
-/* ===== FULL-WIDTH FOOTER FIX ===== */
-.full-width {
-  width: 100vw;
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-  border-radius: 0;
+
+.contact__follow h4 {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
 }
