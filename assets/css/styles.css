@@ -100,9 +100,11 @@ img {
 .bd-grid {
   max-width: 1024px;
   display: grid;
-  margin-left: var(--mb-2);
-  margin-right: var(--mb-2);
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
+
 
 .l-header {
   width: 100%;
@@ -722,9 +724,10 @@ img {
 /* ===== CONTACT (MODERNIZED LAYOUT) ===== */
 .contact__container {
   display: grid;
-  grid-template-columns: 1.2fr 1.8fr; /* Wider left, aligned headers */
+  grid-template-columns: 1.3fr 1.7fr; /* slightly more space to the left */
   gap: 2rem;
   margin-top: 2rem;
+  padding: 0 2rem; /* optional: reduce side padding */
   align-items: flex-start;
 }
 .contact__info h3,
