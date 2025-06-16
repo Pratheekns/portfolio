@@ -71,21 +71,22 @@ sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400
 sr.reveal('.home__social-icon',{ interval: 200}); 
 sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200}); 
 
-<script>
-  const toggle = document.getElementById('darkModeToggle');
-  const body = document.body;
+document.addEventListener("DOMContentLoaded", function () {
+  const toggleButton = document.getElementById("darkModeToggle");
+  const isDarkMode = localStorage.getItem("darkMode") === "enabled";
 
-  // Optional: load saved mode from localStorage
-  if (localStorage.getItem('dark-mode') === 'enabled') {
-    body.classList.add('dark-mode');
-    toggle.textContent = '🌞';
+  if (isDarkMode) {
+    document.body.classList.add("dark-mode");
+    toggleButton.textContent = "☀️";
   }
 
-  toggle.addEventListener('click', () => {
-    body.classList.toggle('dark-mode');
-    const enabled = body.classList.contains('dark-mode');
-    toggle.textContent = enabled ? '🌞' : '🌙';
-    localStorage.setItem('dark-mode', enabled ? 'enabled' : 'disabled');
+  toggleButton.addEventListener("click", function () {
+    document.body.classList.toggle("dark-mode");
+
+    const isEnabled = document.body.classList.contains("dark-mode");
+    toggleButton.textContent = isEnabled ? "☀️" : "🌙";
+    localStorage.setItem("darkMode", isEnabled ? "enabled" : "disabled");
   });
-</script>
+});
+
 
