@@ -218,14 +218,12 @@ img {
     color: #0077b5; /* LinkedIn Blue */
 }
 .home__img {
-    position: absolute;
-    right: -15%; /* Move left by increasing negative value */
-    top: 200px; /* Keep the height same */
-    width: 320px; /* Increase size */
+  position: absolute;
+  right: -15%;
+  top: 120px; /* was 200px */
+  width: 320px;
 }
-.home__img {
-    margin-top: 100px !important; /* Pushes it down */
-}
+
 .home__blob {
     transform: translate(-10px, 150px); /* Move left and down */
     width: 350px; /* Increase blob size */
@@ -235,6 +233,9 @@ img {
 }
 .home__blob-img {
   width: 360px;
+}
+.home__img {
+  transition: top 0.3s ease-in-out;
 }
 
 /*BUTTONS*/
