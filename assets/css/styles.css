@@ -1030,4 +1030,20 @@ body.dark-mode .l-header {
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.4); /* subtle shadow */
   transition: background-color 0.3s ease;
 }
+/* === SOCIAL ICON DARK MODE FIX === */
+body.dark-mode .contact__social-icon {
+  background-color: #1e293b;
+  color: #f1f5f9;
+  border: 1px solid #334155;
+}
+
+body.dark-mode .contact__social-icon.github:hover {
+  background-color: #333;
+  color: white;
+}
+
+body.dark-mode .contact__social-icon.linkedin:hover {
+  background-color: #0077b5;
+  color: white;
+}
 
