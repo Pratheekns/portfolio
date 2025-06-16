@@ -70,3 +70,22 @@ sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{});
 sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400}); 
 sr.reveal('.home__social-icon',{ interval: 200}); 
 sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200}); 
+
+<script>
+  const toggle = document.getElementById('darkModeToggle');
+  const body = document.body;
+
+  // Optional: load saved mode from localStorage
+  if (localStorage.getItem('dark-mode') === 'enabled') {
+    body.classList.add('dark-mode');
+    toggle.textContent = '🌞';
+  }
+
+  toggle.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+    const enabled = body.classList.contains('dark-mode');
+    toggle.textContent = enabled ? '🌞' : '🌙';
+    localStorage.setItem('dark-mode', enabled ? 'enabled' : 'disabled');
+  });
+</script>
+
