@@ -964,3 +964,45 @@ body.dark-mode .project-tag {
 body.dark-mode .dark-toggle {
   color: #facc15; /* Sun icon color */
 }
+/* === DARK MODE COLOR FIXES === */
+body.dark-mode {
+  --second-color: #e5e7eb; /* Light text for dark bg */
+  --first-color: #60a5fa;  /* Accent (blue) stays */
+  background-color: #0f172a; /* Deep navy bg */
+  color: var(--second-color);
+}
+
+/* Override headings and text to light */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6,
+body.dark-mode p,
+body.dark-mode span,
+body.dark-mode a {
+  color: var(--second-color);
+}
+
+/* Update card backgrounds for contrast */
+body.dark-mode .project-card,
+body.dark-mode .ngo-card,
+body.dark-mode .timeline-content,
+body.dark-mode .contact__form-box {
+  background-color: #1e293b;
+  color: var(--second-color);
+}
+
+/* Update nav and footer */
+body.dark-mode .l-header,
+body.dark-mode .footer {
+  background-color: #0f172a;
+  color: var(--second-color);
+}
+
+/* Update buttons */
+body.dark-mode .button {
+  background-color: var(--first-color);
+  color: white;
+}
