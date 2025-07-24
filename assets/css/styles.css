@@ -1093,4 +1093,35 @@ body.dark-mode .contact__social-icon.linkedin:hover {
   text-decoration: none;
   font-size: 0.9rem;
 }
+@media screen and (max-width: 768px) {
+  .qualification__toggle {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .timeline::after {
+    left: 8px; /* move the vertical line to the left */
+  }
+
+  .timeline-item {
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 10px;
+  }
+
+  .timeline-item .dot {
+    left: 0;
+  }
+
+  .timeline-item.left .timeline-content,
+  .timeline-item.right .timeline-content {
+    margin: 0 0 20px 0;
+    text-align: left;
+  }
+
+  .timeline-item.left .dot,
+  .timeline-item.right .dot {
+    left: 0;
+  }
+}
 
