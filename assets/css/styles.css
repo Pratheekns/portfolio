@@ -1046,4 +1046,51 @@ body.dark-mode .contact__social-icon.linkedin:hover {
   background-color: #0077b5;
   color: white;
 }
+.certificates__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.certificate-card {
+  background-color: var(--container-color);
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.certificate-card:hover {
+  transform: translateY(-5px);
+}
+
+.certificate-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.certificate-content {
+  padding: 1rem;
+}
+
+.certificate-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.certificate-issuer {
+  font-size: 0.9rem;
+  color: var(--text-color-light);
+  margin-bottom: 0.5rem;
+}
+
+.certificate-link {
+  color: var(--first-color);
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
 
